@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pribadi</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      padding: 40px 15px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .kartu {
+      background: #1e293b;
+      margin: 15px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 500px;
+    }
+
+    button {
+      background: #60a5fa;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #1e293b;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Halo, Saya Nama Kamu!</h1>
+    <p>Selamat datang di website pribadi saya</p>
+  </header>
+
+  <section>
+    <h2>Tentang Saya</h2>
+    <div class="kartu">
+      <p>Saya seorang pelajar yang tertarik
+      dengan teknologi dan pemrograman.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hobi Saya</h2>
+    <div class="kartu">
+      <p>💻 Belajar Coding</p>
+      <p>🎮 Bermain Game</p>
+      <p>🎵 Mendengarkan Musik</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pesan</h2>
+    <div class="kartu">
+      <button onclick="sapa()">Klik Saya</button>
+      <p id="pesan"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Website Pribadi Saya</p>
+  </footer>
+
+  <script>
+    function sapa() {
+      document.getElementById("pesan").textContent =
+        "Terima kasih sudah mengunjungi website saya!";
+    }
+  </script>
+
+</body>
+</html>
+
